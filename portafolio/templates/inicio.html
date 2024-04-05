@@ -1,0 +1,191 @@
+{% extends 'bases/base.html' %}
+<!---->
+{%block content %} {% load static %}
+<div class="bg">
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">ABOUT OUR COMPANY</h3>
+      </div>
+      <p class="layout_padding2-top">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco
+      </p>
+      <div class="img-box layout_padding2">
+        <img src="{% static 'images/about-img.jpg' %}" alt="" />
+      </div>
+      <p class="layout_padding2-bottom">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco
+      </p>
+    </div>
+  </section>
+
+  <section class="service_section layout_padding-bottom">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">OUR SERVICES</h3>
+      </div>
+      <p class="">ad minim veniam, quis nostrud exercitation ullamco</p>
+      <div class="service_container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box b-1">
+              <div class="img-box">
+                <img src="{% static 'images/s-1.jpg' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>Tab Services</h6>
+                <p>adipiscing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box b-2">
+              <div class="img-box">
+                <img src="{% static 'images/s-2.jpg' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>Pipe Water</h6>
+                <p>adipiscing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box b-3">
+              <div class="img-box">
+                <img src="{% static 'images/s-3.jpg' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>Washing Machine</h6>
+                <p>adipiscing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box b-4">
+              <div class="img-box">
+                <img src="{% static 'images/s-4.jpg' %}" alt="" />
+              </div>
+              <div class="detail-box">
+                <h6>Hand Washing</h6>
+                <p>adipiscing elit, sed do eiusmod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">HOW IT WORKS</h3>
+      </div>
+    </div>
+    <div class="work_container">
+      <div class="box b-1">
+        <div class="img-box">
+          <img src="{% static 'images/w-1.png' %}" alt="" />
+        </div>
+        <div class="name">
+          <h6>Adipiscing elit</h6>
+        </div>
+      </div>
+      <div class="box b-2">
+        <div class="img-box">
+          <img src="{% static 'images/w-2.png' %}" alt="" />
+        </div>
+        <div class="name">
+          <h6>Adipiscing elit</h6>
+        </div>
+      </div>
+      <div class="box b-3">
+        <div class="img-box">
+          <img src="{% static 'images/w-3.png' %}" alt="" />
+        </div>
+        <div class="name">
+          <h6>Adipiscing elit</h6>
+        </div>
+      </div>
+      <div class="box b-4">
+        <div class="img-box">
+          <img src="{% static 'images/w-4.png' %}" alt="" />
+        </div>
+        <div class="name">
+          <h6>Adipiscing elit</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact_section layout_padding">
+    <div class="custom_heading-container">
+      <h3 class=" ">Booking Online</h3>
+    </div>
+    <div class="container layout_padding2-top">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="">
+            <div>
+              <input type="text" placeholder="NAME" />
+            </div>
+            <div>
+              <input type="email" placeholder="EMAIL" />
+            </div>
+            <div>
+              <input type="text" placeholder="PHONE NUMBER" />
+            </div>
+            <div>
+              <select name="" id="">
+                <option value="" disabled selected>TYPE OF SERVICE</option>
+                <option value="">Service 1</option>
+                <option value="">Service 2</option>
+                <option value="">Service 3</option>
+              </select>
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="MESSAGE" />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button>SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h3 class=" ">What clients says</h3>
+      </div>
+      <div class="layout_padding2-top">
+        <div class="client_container">
+          <div class="detail-box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco
+            </p>
+          </div>
+          <div class="client_id">
+            <div class="img-box">
+              <img src="{% static 'images/client.png' %}" alt="" />
+            </div>
+            <div class="name">
+              <h5>tempor incididunt</h5>
+              <h6>Owner</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock %}

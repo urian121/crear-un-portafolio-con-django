@@ -1,0 +1,45 @@
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="{% url 'inicio' %}">
+        <span> Urian V. </span>
+      </a>
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'inicio' %}">
+                Inicio <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'acerca_de_mi' %}">
+                Acerca De
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'servicios' %}"> Servicios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contactame' %}">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+        <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+      </form>
+    </nav>
+  </div>
+</header>
