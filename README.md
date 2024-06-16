@@ -24,7 +24,7 @@
 
 #### Resultado Final
 
-!()[https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/creando-un-portafolio-con-django.png]
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/creando-un-portafolio-con-django.png)
 
 ### Expresiones de Gratitud 🎁
 
