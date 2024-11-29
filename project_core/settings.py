@@ -131,7 +131,7 @@ if DEBUG is not True:
     ALLOWED_HOSTS = ['.vercel.app']
 
     # Archivos estáticos
-    STATIC_URL = '/static/'
+    STATIC_URL = 'static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
     # STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
 
