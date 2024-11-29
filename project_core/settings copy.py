@@ -127,14 +127,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Para Producción
 if DEBUG is not True:
-    # Hosts permitidos en producción
-    ALLOWED_HOSTS = ['.vercel.app']
-
-    # Archivos estáticos
+    ALLOWED_HOSTS = ['urian.pythonanywhere.com']
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-    # STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
 
-    # Archivos de medios (usa almacenamiento externo en producción)
+    # STATICFILES_DIRS = ('/var/www/html/portafolio/portafolio-django/portafolio/static',)
+
+    # TEMPLATE_DIRS = ('/var/www/html/portafolio/portafolio-django/portafolio/templates',)
+
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
