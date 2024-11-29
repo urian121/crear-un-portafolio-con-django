@@ -128,17 +128,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Para Producción
 if DEBUG is not True:
-    # Hosts permitidos en producción
+    # Hosts permitidos en producción (.vercel.app) en todos los subdominios de vercel
     ALLOWED_HOSTS = ['.vercel.app', 'portafolio-con-django.vercel.app']
 
     # Archivos estáticos
     STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-    # STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+
+    # Configuración de almacenamiento de archivos estáticos
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
     # Archivos de medios (usa almacenamiento externo en producción)
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
-    WHITENOISE_MANIFEST_STRICT = False  # Para permitir que WhiteNoise gestione las versiones de archivos estáticos
+    # WSGI_APPLICATION = 'project_core.wsgi.app'
+    WSGI_APPLICATION = 'project_core.wsgi.application'

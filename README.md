@@ -34,3 +34,8 @@
     Da las gracias públicamente 🤓.
 
 ## No olvides SUSCRIBIRTE 👍
+
+
+WhiteNoise permite que tu aplicación Django sirva archivos estáticos de forma eficiente y sencilla sin la necesidad de un servidor web adicional.
+
+python3 manage.py collectstatic --noinput
