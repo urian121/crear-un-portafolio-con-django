@@ -128,7 +128,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Para Producción
 if DEBUG is not True:
     # Hosts permitidos en producción
-    ALLOWED_HOSTS = ['.vercel.app']
+    ALLOWED_HOSTS = ['.vercel.app', 'portafolio-con-django.vercel.app']
 
     # Archivos estáticos
     STATIC_URL = 'static/'

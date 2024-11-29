@@ -15,5 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_core.settings')
 
 application = get_wsgi_application()
 
-# Agregar la configuración
+# Utilizar una variable pública nombrada app para exponer la aplicación 
 app = application # Add our app variable this
