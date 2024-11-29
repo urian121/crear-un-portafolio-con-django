@@ -39,3 +39,13 @@
 WhiteNoise permite que tu aplicación Django sirva archivos estáticos de forma eficiente y sencilla sin la necesidad de un servidor web adicional.
 
 python3 manage.py collectstatic --noinput
+
+Antes de hacer deploy ejecutar
+python  manage.py collectstatic
+
+https://whitenoise.readthedocs.io/en/latest/django.html
+- https://www.youtube.com/watch?v=eQJFHfFn-sk
+- https://github.com/NagiPragalathan/vercel_deployment
+- https://github.com/estuardodev/VercelDeploy
+- https://github.com/Joshyvibe/django-deploy-vercel
+https://github.com/urian121/subir-multiples-imagenes-con-Django
