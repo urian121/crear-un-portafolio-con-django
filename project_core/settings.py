@@ -134,14 +134,14 @@ if DEBUG is not True:
     # Archivos estáticos
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
-
-    # Configuración de almacenamiento de archivos estáticos
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    
 
     # Archivos de medios (usa almacenamiento externo en producción)
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
-    # WSGI_APPLICATION = 'project_core.wsgi.app'
-    WSGI_APPLICATION = 'project_core.wsgi.application'
+    # Configuración de almacenamiento de archivos estáticos
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    # Para que Django pueda leer archivos estáticos en producción
+    WSGI_APPLICATION = 'project_core.wsgi.app'
