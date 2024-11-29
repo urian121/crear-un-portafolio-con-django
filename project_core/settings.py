@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -138,3 +139,6 @@ if DEBUG is not True:
     # Archivos de medios (usa almacenamiento externo en producción)
     MEDIA_URL = '/media/'
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+    WHITENOISE_MANIFEST_STRICT = False  # Para permitir que WhiteNoise gestione las versiones de archivos estáticos
